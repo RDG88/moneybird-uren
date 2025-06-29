@@ -1,4 +1,3 @@
-```markdown
 # Urenregistratie Moneybird
 
 Een Streamlit-app voor het registreren van gewerkte uren in Moneybird met een gebruiksvriendelijke preview en bevestigingsstap.
