@@ -80,3 +80,29 @@ requests
 holidays
 python-dateutil
 ```
+
+## Docker compose example
+
+```docker-compose
+version: "3.9"
+
+services:
+  urenregistratie:
+    image: ghcr.io/rdg88/urenregistratie-moneybird:latest
+
+    container_name: urenregistratie-moneybird
+    ports:
+      - "8501:8501"      # Streamlit UI
+
+    # Mount je Moneybird‑credentials
+    volumes:
+      - ./secrets/.streamlit:/app/.streamlit:rw
+
+    # Streamlit vars (optioneel; staan al op correcte default in Dockerfile)
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+
+    restart: unless-stopped
+```
