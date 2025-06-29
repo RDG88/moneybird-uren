@@ -2,7 +2,10 @@
 
 Een Streamlit-app voor het registreren van gewerkte uren in Moneybird met een gebruiksvriendelijke preview en bevestigingsstap.
 
+<img width="1274" alt="02 (4)" src="https://github.com/user-attachments/assets/9b05cbc9-7fe0-4531-819a-9d69715e4c9b" />
+
 ## Functionaliteit
+
 
 - Selecteer contact, project, tijdsperiode en werkdagen.
 - Automatische voorvertoning met feestdagenfilter.
